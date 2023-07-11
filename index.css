@@ -1,0 +1,92 @@
+*, *::before, *::after {  box-sizing: border-box;
+
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    overflow: hidden;
+    font-family: courier;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, red, blue);
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 90px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: yellow;
+    border-radius: 25px;
+    margin: 10px;
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    border-radius: 25px;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: white;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  @media screen and (max-width: 639px) and (min-width: 320px){
+    button{
+      width: 70px;
+      height: 70px;
+    }
+  
+    .span-two{
+      width: 160px;
+      height: 65px;
+    }
+  
+    .calculator-grid > button{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .output{
+      width: 345px;
+      margin-left: 7px;
+    }
+    
+  .calculator-grid > button {
+       
+   }
+  }
+  

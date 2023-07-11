@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-grid">
+      <div class="output">
+        <div  class="current-operand"></div>
+      </div>
+      <button onclick="toliqOchir()"  class="span-two">AC</button>
+      <button  onclick="birniOchir()">DEL</button>
+      <button onclick="ekranaYaz(this)">/</button>
+      <button onclick="ekranaYaz(this)" class="numbers">1</button>
+      <button onclick="ekranaYaz(this)" class="numbers">2</button>
+      <button onclick="ekranaYaz(this)" class="numbers">3</button>
+      <button onclick="ekranaYaz(this)">*</button>
+      <button onclick="ekranaYaz(this)" class="numbers">4</button>
+      <button onclick="ekranaYaz(this)" class="numbers">5</button>
+      <button onclick="ekranaYaz(this)" class="numbers">6</button>
+      <button onclick="ekranaYaz(this)" data-operation="+">+</button>
+      <button onclick="ekranaYaz(this)" class="numbers">7</button>
+      <button onclick="ekranaYaz(this)" class="numbers">8</button>
+      <button onclick="ekranaYaz(this)" class="numbers">9</button>
+      <button onclick="ekranaYaz(this)">-</button>
+      <button onclick="ekranaYaz(this)">.</button>
+      <button onclick="ekranaYaz(this)" class="numbers">0</button>
+      <button onclick="ekranaYaz(this)"  class="span-two">=</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
